@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Pasquettaa {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        
+        Prodotto p=new Prodotto (nome, quantità, prezzo);
+        
+        
+        System.out.println("inserisci 1 per la lista della spesa, inserisci 2 per inserire i partecipanti e per ogni partecipanti inserire i prodotti che compra, inserisci 3 per salvare la lista della spesa, inserisci 4 per stampare la lista dei partecipanti co affainco scritto quanto ha speso e quanto deve avere o dare" );
+        int scelta=sc.nextInt();
+            if(scelta==1){
+                System.out.println("quanti prodotti vuoi creare?");
+                int pro=sc.nextInt();
+                Prodotti p=new Prodotti(int pro);
+                for(int i=0; i<pro; i++){
+                    p.
+                    System.out.println("nome prodotto");
+                    String nome=sc.nextLine();
+                    System.out.println("quantità prodotto");
+                    int quantità=sc.nextInt();
+                    System.out.println("prezzo del prodotto");
+                    int prezzo=sc.nextInt();
+                    
+                }
+                
+            }
+                
+      
+    }
+}
