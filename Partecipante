@@ -1,14 +1,12 @@
 public class Partecipante {
     private int Nome;
     private int Cognome;
-    private float Totale;
     private Partecipante partecipante[];
     private int i=0;
     
-    public Partecipante(int Nome, int Cognome, float Totale){
+    public Partecipante(int Nome, int Cognome){
         setNome(Nome);
         setCognome(Cognome);
-        setTotale (Totale);
        }
 
 public void setNome(nome){
