@@ -2,10 +2,12 @@ public class Prodotto {
     private int costo;
     private String nome;
     private int quantità;
+    private float totale;
     private Prodotto lista[];
     private int i=0;
     
-    public Prodotto(int costo, String nome, int quantità){
+    public Prodotto(String nome, int costo, int quantità){
+        setTotale(totale);
         setCosto(costo);
         setNome(nome);
         setQuantità(quantità);
@@ -16,39 +18,39 @@ public class Prodotto {
    this.costo=costo;
 }
 
-public void setNome(String nome){
-this.nome=nome;
+    public void setNome(String nome){
+        this.nome=nome;
 }
 
-public void setQuantità(int quantità){
-this.nome=nome;
+    public void setQuantità(int quantità){
+        this.quantità=quantità;
 }
 
-public int getCosto(){
-return costo;
+    public int getCosto(){
+        return costo;
 }
 
-public String getNome(){
-return nome;
+    public String getNome(){
+        return nome;
 }
 
-public int getQuantità(){
-return quantità;
+    public int getQuantità(){
+        return quantità;
 }
 
-public Prodotto[] getLista(){
-    return lista;
+    public Prodotto[] getLista(){
+        return lista;
 }
 
 public void setLista(Prodotto[] lista){
     this.lista=lista;
 }
 
-public void setTotale(totale){
+public void setTotale(float totale){
     this.totale=totale;
 }
 
-public void getTotale(){
+public float getTotale(){
     return totale;
 }
 
@@ -67,15 +69,10 @@ public void aggiungiProdotto(Prodotto prodotto){
 
 public void stampaProdotto(){
     System.out.println("Questi sono i prodotti che hai comprato");
-    for(i=0;i<n;i++){
-        System.out.println("Nome:"+lista[i].getNome()+"Prezzo"+lista[i].getPrezzo()+"Quantità"+lista[i].getQuantità());
+    for(i=0;i<10;i++){
+        System.out.println("Nome:"+lista[i].getNome()+"Prezzo"+lista[i].getCosto()+"Quantità"+lista[i].getQuantità());
     }
 }
-public void Totale(){
-    System.out.println("Questo è il totale da pagare");
-    int Totale=0;
-    int Somma=Totale+getTotale;
-    Totale=Totale+getTotale();
-}
+
 
 }
