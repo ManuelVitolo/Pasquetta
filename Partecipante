@@ -1,10 +1,10 @@
 public class Partecipante {
-    private int Nome;
-    private int Cognome;
+    private String Nome;
+    private String Cognome;
     private Partecipante partecipante[];
     private int i=0;
     
-    public Partecipante(int Nome, int Cognome){
+    public Partecipante(String Nome, String Cognome){
         setNome(Nome);
         setCognome(Cognome);
        }
