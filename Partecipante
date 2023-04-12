@@ -1,6 +1,6 @@
 public class Partecipante {
-    private String Nome;
-    private String Cognome;
+    private String nome;
+    private String cognome;
     private Partecipante partecipante[];
     private int i=0;
     
@@ -9,29 +9,30 @@ public class Partecipante {
         setCognome(Cognome);
        }
 
-public void setNome(nome){
+public void setNome(String nome){
     this.nome=nome;
 }
 
-public void setCognome(cognome){
+public final void setCognome(String cognome){
     this.cognome=cognome;
 }
 
-public void getNome(){
+public String getNome(){
     return nome;
 }
 
-public void getCognome(){
+public String getCognome(){
     return cognome;
 }
 
 public Partecipante getPartecipante(int i){
-    return [i];
+    return partecipante[i];
 }
 
 public void setPartecipante(Partecipante partecipante){
-    this.lista[i]=prodotto;
+    this.partecipante[i]=partecipante;
     i++;
 }
 
 }
+   
