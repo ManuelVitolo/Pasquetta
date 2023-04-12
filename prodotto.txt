@@ -1,0 +1,14 @@
+public class Prodotti {
+     private int i=0;
+    private Prodotto prodotto[];
+    public Prodotti(int dimensione){
+     prodotti=new Prodotto[dimensione];
+    }
+    public void aggProdotti(Prodotto P) {
+        prodotti[i]=P;
+        i++;        
+}   
+    public Prodotto[] getprodotto(){
+        return prodotto;
+    }
+}

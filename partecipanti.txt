@@ -1,0 +1,15 @@
+public class Partecipanti {
+    private int i=0;
+    private Partecipante persone[];
+    public Partecipanti(int dimensione){
+     persone=new Partecipante[dimensione];
+    }
+    public void aggPartecipanti(Partecipante P) {
+        persone[i]=P;
+        i++;        
+}
+    public Partecipante[] getpersone(){
+        return persone;
+    }
+    
+}
